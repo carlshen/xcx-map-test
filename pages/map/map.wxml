@@ -1,0 +1,30 @@
+<!--pages/map/map.wxml-->
+<map id="{{mapId}}" subkey="{{mapKey}}" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}"
+  min-scale="{{minScale}}" max-scale="{{maxScale}}" show-location="true" layer-style="1" markers="{{markersData}}"
+  circles="{{circlesData}}" polygons="{{polygonsData}}" polyline="{{polylineData}}" bindtap="bindTap"
+  bindmarkertap="bindMarkerTap" bindupdated="bindUpdated" bindregionchange="bindRegionChange">
+</map>
+
+<!-- 顶部通告栏 -->
+<view class="notice">
+  <image src="../../static/notice_icon.png"></image>
+  <text>天气预报：2021年07月23日 星期五 上海 晴 26~34°C</text>
+</view>
+
+<!-- 右侧工具条 -->
+<view class="right-tool">
+  <view>
+    <image src="../../static/car_icon.png"></image>
+  </view>
+  <view>
+    <image src="../../static/user_icon.png"></image>
+  </view>
+  <view bindtap="moveTolocation">
+    <image src="../../static/location_icon.png"></image>
+  </view>
+</view>
+
+<!-- 扫码开锁 -->
+<view class="btn">{{curAddress}} {{h}}:{{m}}:{{s}}</view>
+
+<!-- 其他 -->

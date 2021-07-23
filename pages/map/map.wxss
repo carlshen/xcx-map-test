@@ -1,0 +1,74 @@
+/* pages/map/map.wxss */
+map {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 顶部通告栏 */
+.notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background: #ffffff;
+  opacity: .9;
+  display: flex;
+  align-items: center;
+}
+.notice image {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.notice text {
+  font-size: 26rpx;
+  color: #2c2c2c;
+}
+
+
+.btn {
+  position: fixed;
+  bottom: 80rpx;
+  left: 10%;
+  background: skyblue;
+  width: 80%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}
+
+/* 右侧工具条 */
+.right-tool {
+  position: fixed;
+  right: 20rpx;
+  bottom: 200rpx;
+  width: 80rpx;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.right-tool view {
+  width: 80rpx;
+  height: 80rpx;
+  background: #ffffff;
+  opacity: .9;
+  border-radius: 40rpx;
+  margin: 10rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-tool view image {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
